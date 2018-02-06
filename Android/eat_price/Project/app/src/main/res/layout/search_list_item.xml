@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/search_list">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:maxHeight="100dp"
+        android:maxWidth="100dp"
+        android:padding="10dp" />
+
+    <TextView
+        android:fontFamily="@font/myfont"
+        android:id="@+id/search_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/brown"
+        android:textSize="16sp" />
+
+    <TextView
+        android:fontFamily="@font/myfont"
+        android:id="@+id/search_price"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="right|center_vertical"
+        android:textSize="16sp"
+        android:textColor="@color/brown"
+        android:paddingRight="16dp"/>
+</LinearLayout>

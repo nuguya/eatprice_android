@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ourincheon.com.project.MainActivity">
+
+    <TabHost
+        android:id="@+id/tabhost1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@drawable/background1">
+
+                <!--첫번째 페이지-->
+
+                <!--두번째 페이지-->
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/content1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/logo"
+                        android:layout_width="48dp"
+                        android:layout_height="37dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="24dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/icon" />
+
+                    <TextView
+                        android:fontFamily="@font/myfont"
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="32dp"
+                        android:text="@string/input"
+                        android:textColor="@color/brown"
+                        android:textSize="22sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+                    <EditText
+                        android:fontFamily="@font/myfont"
+                        android:id="@+id/minprice"
+                        android:layout_width="88dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="48dp"
+                        android:layout_marginTop="20dp"
+                        android:cursorVisible="false"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="textPersonName"
+                        android:numeric="integer"
+                        android:shadowColor="@color/brown"
+                        android:textColor="@color/brown"
+                        android:textColorLink="@color/brown"
+                        android:textCursorDrawable="@color/brown"
+                        app:layout_constraintEnd_toStartOf="@+id/textView2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+                    <EditText
+                        android:fontFamily="@font/myfont"
+                        android:id="@+id/maxprice"
+                        android:layout_width="88dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="48dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="20dp"
+                        android:cursorVisible="true"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="textPersonName"
+                        android:numeric="integer"
+                        android:textCursorDrawable="@color/brown"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView2"
+                        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:fontFamily="@font/myfont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="32dp"
+                        android:text="~"
+                        app:layout_constraintEnd_toStartOf="@+id/maxprice"
+                        app:layout_constraintStart_toEndOf="@+id/minprice"
+                        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:fontFamily="@font/myfont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="56dp"
+                        android:text="@string/select"
+                        android:textColor="@color/brown"
+                        android:textSize="22sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+                    <Button
+                        android:fontFamily="@font/myfont"
+                        android:id="@+id/sodam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="24dp"
+                        android:background="@drawable/button_change"
+                        android:text="@string/sodam"
+                        android:textColor="@drawable/button_text_change"
+                        app:layout_constraintEnd_toStartOf="@+id/tomato"
+                        app:layout_constraintHorizontal_chainStyle="packed"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                    <Button
+                        android:fontFamily="@font/myfont"
+                        android:id="@+id/tomato"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="24dp"
+                        android:background="@drawable/button_change"
+                        android:text="@string/tomato"
+                        android:textColor="@drawable/button_text_change"
+                        app:layout_constraintEnd_toStartOf="@+id/gozip"
+                        app:layout_constraintStart_toEndOf="@+id/sodam"
+                        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                    <Button
+                        android:fontFamily="@font/myfont"
+                        android:id="@+id/gozip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="24dp"
+                        android:layout_marginTop="24dp"
+                        android:background="@drawable/button_change"
+                        android:text="@string/gozip"
+                        android:textColor="@drawable/button_text_change"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/tomato"
+                        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                    <Button
+                        android:fontFamily="@font/myfont"
+                        android:id="@+id/salady"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/button_change"
+                        android:text="@string/salady"
+                        android:textColor="@drawable/button_text_change"
+                        app:layout_constraintEnd_toStartOf="@+id/kimcheon"
+                        app:layout_constraintHorizontal_chainStyle="packed"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tomato" />
+
+                    <Button
+                        android:fontFamily="@font/myfont"
+                        android:id="@+id/kimcheon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/button_change"
+                        android:text="@string/kimcheon"
+                        android:textColor="@drawable/button_text_change"
+                        app:layout_constraintEnd_toStartOf="@+id/papaies"
+                        app:layout_constraintStart_toEndOf="@+id/salady"
+                        app:layout_constraintTop_toBottomOf="@+id/tomato" />
+
+                    <Button
+                        android:fontFamily="@font/myfont"
+                        android:id="@+id/papaies"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="24dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/button_change"
+                        android:text="@string/papaies"
+                        android:textColor="@drawable/button_text_change"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/kimcheon"
+                        app:layout_constraintTop_toBottomOf="@+id/tomato" />
+
+                    <Button
+                        android:fontFamily="@font/myfont"
+                        android:id="@+id/gong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/button_change"
+                        android:text="@string/gong"
+                        android:textColor="@drawable/button_text_change"
+                        app:layout_constraintEnd_toStartOf="@+id/shanchi"
+                        app:layout_constraintHorizontal_chainStyle="packed"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/kimcheon" />
+
+                    <Button
+                        android:fontFamily="@font/myfont"
+                        android:id="@+id/shanchi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/button_change"
+                        android:text="@string/sangchi"
+                        android:textColor="@drawable/button_text_change"
+                        app:layout_constraintEnd_toStartOf="@+id/bongus"
+                        app:layout_constraintStart_toEndOf="@+id/gong"
+                        app:layout_constraintTop_toBottomOf="@+id/kimcheon" />
+
+                    <Button
+                        android:fontFamily="@font/myfont"
+                        android:id="@+id/bongus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="24dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/button_change"
+                        android:text="@string/bongus"
+                        android:textColor="@drawable/button_text_change"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/shanchi"
+                        app:layout_constraintTop_toBottomOf="@+id/papaies" />
+
+                    <Button
+                        android:fontFamily="@font/myfont"
+                        android:id="@+id/search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="24dp"
+                        android:background="@drawable/search_button"
+                        android:text="@string/search"
+                        android:textColor="@color/brown"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/shanchi" />
+
+                </android.support.constraint.ConstraintLayout>
+
+                <LinearLayout
+                    android:id="@+id/content2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ExpandableListView
+                        android:id="@+id/menu"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="16dp"
+                        android:divider="@android:color/transparent"
+                        android:dividerHeight="10dp"
+                        android:childDivider="@android:color/transparent"
+                        android:groupIndicator="@null"
+                        android:fontFamily="@font/myfont" />
+                </LinearLayout>
+
+                <!--세번째 페이지-->
+                <LinearLayout
+                    android:id="@+id/content3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:fontFamily="@font/myfont"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="세번째" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/yellow" />
+            <!-- TabWidget의 id 값이 무조건 tabs로 지정되어야 함 -->
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

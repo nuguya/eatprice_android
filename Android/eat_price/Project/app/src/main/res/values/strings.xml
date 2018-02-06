@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">가격을 먹다</string>
+    <string name="input">가격을 입력 하세요</string>
+    <string name="select">식당을 선택 하세요</string>
+    <string name="search">검색</string>
+    <!-- 가게이름 -->
+    <string name="sodam">소담국밥</string>
+    <string name="tomato">토마토</string>
+    <string name="gozip">고집</string>
+    <string name="salady">샐러디</string>
+    <string name="kimcheon">김밥천국</string>
+    <string name="papaies">파파이스</string>
+    <string name="gong">공씨네</string>
+    <string name="sangchi">샹차이</string>
+    <string name="bongus">봉구스</string>
+</resources>
